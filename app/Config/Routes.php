@@ -31,6 +31,15 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+$routes->get('/admin', 'Admin/AdminController::index');
+$routes->get('/admin/icons', 'Admin/AdminController::icons');
+$routes->get('/admin/map', 'Admin/AdminController::map');
+$routes->get('/admin/notifications', 'Admin/AdminController::notifications');
+$routes->get('/admin/rtl', 'Admin/AdminController::rtl');
+$routes->get('/admin/tables', 'Admin/AdminController::tables');
+$routes->get('/admin/typography', 'Admin/AdminController::typography');
+$routes->get('/admin/upgrade', 'Admin/AdminController::upgrade');
+$routes->get('/admin/user', 'Admin/AdminController::user');
 $routes->get('/', 'Home::index');
 
 /*
