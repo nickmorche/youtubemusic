@@ -353,9 +353,13 @@ demo = {
 
     var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, 'rgba(72,72,176,0.2)');
-    gradientStroke.addColorStop(0.2, 'rgba(72,72,176,0.0)');
-    gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
+    // gradientStroke.addColorStop(1, 'rgba(72,72,176,0.2)');
+    // gradientStroke.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    // gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
+
+    gradientStroke.addColorStop(1, 'rgba(175,6,6,0.3)');
+    gradientStroke.addColorStop(0.4, 'rgba(175,6,6,0.0)');
+    gradientStroke.addColorStop(0, 'rgba(175,6,6,0)'); //red colors
 
     var data = {
       labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
@@ -363,13 +367,13 @@ demo = {
         label: "Data",
         fill: true,
         backgroundColor: gradientStroke,
-        borderColor: '#d048b6',
+        borderColor: '#AF0606',
         borderWidth: 2,
         borderDash: [],
         borderDashOffset: 0.0,
-        pointBackgroundColor: '#d048b6',
+        pointBackgroundColor: '#AF0606',
         pointBorderColor: 'rgba(255,255,255,0)',
-        pointHoverBackgroundColor: '#d048b6',
+        pointHoverBackgroundColor: '#AF0606',
         pointBorderWidth: 20,
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
@@ -431,9 +435,12 @@ demo = {
 
     var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, 'rgba(72,72,176,0.1)');
-    gradientStroke.addColorStop(0.4, 'rgba(72,72,176,0.0)');
-    gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
+    // gradientStroke.addColorStop(1, 'rgba(72,72,176,0.1)');
+    // gradientStroke.addColorStop(0.4, 'rgba(72,72,176,0.0)');
+    // gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
+    gradientStroke.addColorStop(1, 'rgba(175,6,6,0.1)');
+    gradientStroke.addColorStop(0.4, 'rgba(175,6,6,0.0)');
+    gradientStroke.addColorStop(0, 'rgba(175,6,6,0)'); //red colors
     var config = {
       type: 'line',
       data: {
@@ -442,13 +449,13 @@ demo = {
           label: "My First dataset",
           fill: true,
           backgroundColor: gradientStroke,
-          borderColor: '#d346b1',
+          borderColor: '#AF0606',
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          pointBackgroundColor: '#d346b1',
+          pointBackgroundColor: '#AF0606',
           pointBorderColor: 'rgba(255,255,255,0)',
-          pointHoverBackgroundColor: '#d346b1',
+          pointHoverBackgroundColor: '#AF0606',
           pointBorderWidth: 20,
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
