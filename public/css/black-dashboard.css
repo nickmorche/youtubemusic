@@ -5273,6 +5273,13 @@ input[type="button"].btn-block {
   border-top-right-radius: calc(0.2857rem - 0.0625rem);
 }
 
+.music-card-img-top {
+  border-top-left-radius: calc(0.2857rem - 0.0625rem);
+  border-top-right-radius: calc(0.2857rem - 0.0625rem);
+  width: 140px;
+  height: 140px;
+}
+
 .card-img-bottom {
   width: 100%;
   border-bottom-right-radius: calc(0.2857rem - 0.0625rem);
@@ -7003,6 +7010,7 @@ a.close.disabled {
 
 .carousel {
   position: relative;
+  margin-left:15px
 }
 
 .carousel.pointer-event {
@@ -7090,7 +7098,7 @@ a.close.disabled {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 7%;
   color: #ffffff;
   text-align: center;
   opacity: 0.5;
@@ -17829,6 +17837,11 @@ table.tablesorter thead tr .headerSortDown {
 
 .main-panel>.content {
   padding: 78px 30px 30px 280px;
+  min-height: calc(100vh - 70px);
+}
+
+.main-panel>.contentUser {
+  padding: 78px 30px 30px 30px;
   min-height: calc(100vh - 70px);
 }
 

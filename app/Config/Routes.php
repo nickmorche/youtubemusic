@@ -40,6 +40,8 @@ $routes->get('/admin/tables', 'Admin/AdminController::tables');
 $routes->get('/admin/typography', 'Admin/AdminController::typography');
 $routes->get('/admin/upgrade', 'Admin/AdminController::upgrade');
 $routes->get('/admin/user', 'Admin/AdminController::user');
+
+
 $routes->get('/', 'Home::index');
 
 /*
