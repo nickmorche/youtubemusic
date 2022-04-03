@@ -10,22 +10,29 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <!-- Deixe data-interval='0' e irá parar de girar -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="0">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class='d-flex'>
                                     <div class="card music">
-                                        <img class="music-card-img-top" src="./musics/img/summer.jpg" alt="Card image cap">
+                                        <div class='card-image'>
+                                            <img class="music-card-img-top" src="./musics/img/summer.jpg" alt="Card image cap">
+                                        </div>
                                         <div class="card-body">
                                             <h6>Summer</h6>
-                                            <p class="card-text">NEFFEX - 2,8 mi de visualizações</p>
+                                            <div style="">
+                                                <p class="card-text">NEFFEX</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card music">
-                                        <img class="music-card-img-top" src="./musics/img/lostwithin.jpg" alt="Card image cap">
+                                        <div class='card-image'>
+                                            <img class="music-card-img-top" src="./musics/img/lostwithin.jpg" alt="Card image cap">
+                                        </div>
                                         <div class="card-body">
                                             <h6>Lost Within</h6>
-                                            <p class="card-text">NEFFEX - 1,4 mi de visualizações</p>
+                                            <p class="card-text">NEFFEX</p>
                                         </div>
                                     </div>
                                 </div>
@@ -33,10 +40,12 @@
                             <div class="carousel-item">
                                 <div class='d-flex'>
                                     <div class="card music">
-                                        <img class="music-card-img-top" src="./musics/img/grateful.jpg" alt="Card image cap">
+                                        <div class='card-image'>
+                                            <img class="music-card-img-top" src="./musics/img/grateful.jpg" alt="Card image cap">
+                                        </div>
                                         <div class="card-body">
                                             <h6>Grateful</h6>
-                                            <p class="card-text">NEFFEX - 5,3 mi de visualizações</p>
+                                            <p class="card-text">NEFFEX</p>
                                         </div>
                                     </div>
                                 </div>
@@ -44,10 +53,12 @@
                             <div class="carousel-item">
                                 <div class='d-flex'>
                                     <div class="card music">
-                                        <img class="music-card-img-top" src="./musics/img/cold.jpg" alt="Card image cap">
+                                        <div class='card-image'>
+                                            <img class="music-card-img-top" src="./musics/img/cold.jpg" alt="Card image cap">
+                                        </div>
                                         <div class="card-body">
                                             <h6>Cold</h6>
-                                            <p class="card-text">NEFFEX - 10 mi de visualizações</p>
+                                            <p class="card-text">NEFFEX</p>
                                         </div>
                                     </div>
                                 </div>

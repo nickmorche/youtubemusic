@@ -20,6 +20,19 @@
         $navbar = $('.navbar');
         $main_panel = $('.main-panel');
 
+        /**
+         * Configurações do Carrosel
+         * Referência:https://getbootstrap.com/docs/4.0/components/carousel/
+         * Tira o intervalo, tira a influência do keyboard,
+         * tira o wrap, quando sai
+         */
+        $('.carousel').carousel({
+          wrap: false, // impede de girar o carrosel
+          pause:true, // pausa a rotação automática
+          interval:false, // tira o intervalo da rotação
+          keyboard: false, // keyboard 
+        });
+
         $full_page = $('.full-page');
 
         $sidebar_responsive = $('body > .navbar-collapse');
@@ -29,8 +42,6 @@
         window_width = $(window).width();
 
         fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
-
-
 
         $('.fixed-plugin a').click(function(event) {
           if ($(this).hasClass('switch-trigger')) {
@@ -140,6 +151,14 @@
         });
 
         $(".music-player").hide();
+
+        // TODO: CONSERTAR FLECHINHAS
+        $('.carousel-control-prev-icon').hide();
+
+        $('.carousel-control-next').click(function(){
+          $('.carousel-control-prev-icon').show();
+        })
+
       });
     });
   </script>

@@ -41,7 +41,10 @@ $routes->get('/admin/typography', 'Admin/AdminController::typography');
 $routes->get('/admin/upgrade', 'Admin/AdminController::upgrade');
 $routes->get('/admin/user', 'Admin/AdminController::user');
 
-
+$routes->get('/generos_musicais/save','Generos_musicais::save');
+$routes->get('/generos_musicais', 'Generos_musicais::index');
+$routes->get('/composers/save','Compositores::salvar');
+$routes->get('/composers','Compositores::index');
 $routes->get('/', 'Home::index');
 
 /*

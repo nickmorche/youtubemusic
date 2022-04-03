@@ -75,7 +75,7 @@
       <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:void(0)">YouTube Music</a>
+            <a class="navbar-brand" href="<?=base_url('/')?>">YouTube Music</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -88,6 +88,29 @@
                 <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split" ></i>
                   <span class="d-lg-none d-md-block">Search</span>
                 </button>
+              </li>
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link">
+                  <i class="tim-icons icon-compass-05"></i>
+                  <p class="d-lg-none">Explorar</p>
+                </a>
+              </li>
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link">
+                  <i class="tim-icons tim-icons icon-time-alarm"></i>
+                  <p class="d-lg-none">Biblioteca</p>
+                </a>
+              </li>
+              <li class="dropdown nav-item">
+                <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle='dropdown'>
+                  <i class="tim-icons icon-simple-add"></i>
+                  <p class="d-lg-none">Adicionar</p>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
+                  <li class="nav-link"><a href="<?=base_url('/')?>" class="nav-item dropdown-item">Música</a></li>
+                  <li class="nav-link"><a href="<?=base_url('/composers')?>" class="nav-item dropdown-item">Compositor</a></li>
+                  <li class="nav-link"><a href="<?=base_url('/')?>" class="nav-item dropdown-item">Album</a></li>
+                </ul>
               </li>
               <li class="dropdown nav-item">
                 <a href="javascript:void(0)" class="dropdown-toggle nav-link" data-toggle="dropdown">
