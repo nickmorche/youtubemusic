@@ -1,0 +1,44 @@
+CRITICAL - 2022-04-04 18:10:54 --> Undefined offset: 6
+#0 C:\wamp64\www\youtubemusic\app\Views\user\pages\compositores.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\wamp64\\www\\y...', 98, Array)
+#1 C:\wamp64\www\youtubemusic\system\View\View.php(210): include('C:\\wamp64\\www\\y...')
+#2 C:\wamp64\www\youtubemusic\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\youtubemusic\system\Common.php(1089): CodeIgniter\View\View->render('user/pages/comp...', Array, true)
+#4 C:\wamp64\www\youtubemusic\app\Controllers\Compositores.php(24): view('user/pages/comp...', Array)
+#5 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(832): App\Controllers\Compositores->index()
+#6 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compositores))
+#7 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\youtubemusic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\youtubemusic\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\y...')
+#10 {main}
+CRITICAL - 2022-04-04 18:37:42 --> Call to a member function orderBy() on array
+#0 C:\wamp64\www\youtubemusic\app\Controllers\Compositores.php(20): App\Models\GenerosMusicaisModel->getGenerosMusicais()
+#1 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(832): App\Controllers\Compositores->index()
+#2 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compositores))
+#3 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\youtubemusic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\wamp64\www\youtubemusic\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\y...')
+#6 {main}
+CRITICAL - 2022-04-04 19:57:19 --> Undefined index: nome
+#0 C:\wamp64\www\youtubemusic\app\Views\user\pages\compositores.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\y...', 103, Array)
+#1 C:\wamp64\www\youtubemusic\system\View\View.php(210): include('C:\\wamp64\\www\\y...')
+#2 C:\wamp64\www\youtubemusic\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\youtubemusic\system\Common.php(1089): CodeIgniter\View\View->render('user/pages/comp...', Array, true)
+#4 C:\wamp64\www\youtubemusic\app\Controllers\Compositores.php(24): view('user/pages/comp...', Array)
+#5 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(832): App\Controllers\Compositores->index()
+#6 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compositores))
+#7 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\youtubemusic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\youtubemusic\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\y...')
+#10 {main}
+CRITICAL - 2022-04-04 19:58:07 --> Undefined index: id
+#0 C:\wamp64\www\youtubemusic\app\Views\user\pages\compositores.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\y...', 105, Array)
+#1 C:\wamp64\www\youtubemusic\system\View\View.php(210): include('C:\\wamp64\\www\\y...')
+#2 C:\wamp64\www\youtubemusic\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\youtubemusic\system\Common.php(1089): CodeIgniter\View\View->render('user/pages/comp...', Array, true)
+#4 C:\wamp64\www\youtubemusic\app\Controllers\Compositores.php(24): view('user/pages/comp...', Array)
+#5 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(832): App\Controllers\Compositores->index()
+#6 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compositores))
+#7 C:\wamp64\www\youtubemusic\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\youtubemusic\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\youtubemusic\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\y...')
+#10 {main}

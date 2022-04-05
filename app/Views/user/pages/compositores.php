@@ -85,6 +85,7 @@
                         <table class="table tablesorter " id="">
                             <thead class="text-primary">
                                 <tr>
+                                    <th>Avatar</th>
                                     <th>Nome</th>
                                     <th>Gênero Musical</th>
                                     <th>Ações</th>
@@ -94,9 +95,21 @@
                                 <tbody>
                                     <?php foreach($compositores as $compositores_item): ?>
                                         <tr>
-                                            <td><?=$compositores_item['nome']?></td>
-                                            <td><?=$generos_musicais[$compositores_item['id_genero_musical'] - 1]['nome']?></td>
-                                            <td><?=$compositores_item['id']?></td>
+                                            <?php if(!empty($compositores_item['avatar_img'])): ?> 
+                                                <td><img style='width:80px;height:80px' src="<?=base_url('./musics/avatar/'.$compositores_item['avatar_img'])?>" alt="Imagem não encontrada"></td>
+                                            <?php else: ?>
+                                                <td></td>
+                                            <?php endif; ?>
+                                            <td><?=$compositores_item['id']?> - <?=$compositores_item['compositor_nome']?></td>
+                                            <td><?=$compositores_item['genero_musical_nome']?></td>
+                                            <td>
+                                                <button href="javascript:void(0)" class="btn btn-icon btn-round btn-google">
+                                                    <i class="tim-icons icon-pencil"></i>
+                                                </button>
+                                                <a onclick="javascript:confirm('Deseja realmente excluir este compositor?')" href='/composers/delete/<?=$compositores_item['id']?>' class="btn btn-icon btn-round btn-google">
+                                                    <i class="tim-icons icon-simple-remove"></i>
+                                                </a>
+                                            </td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>

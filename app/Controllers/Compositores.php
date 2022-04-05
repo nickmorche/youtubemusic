@@ -146,15 +146,26 @@ class Compositores extends Controller{
         $data = [
             'title' => 'Compositores',
             'compositores' => $compositores_model->getCompositores(),
-            'msg' => 'Compositor criado!'.var_dump($arraySave),
+            'msg' => 'Compositor criado!',
             'generos_musicais' => $generos_musicais_model->getGenerosMusicais(),
         ];
 
-        echo view('user/templates/html-header',$data);
+        echo view('user/templates/html-header', $data);
         echo view('user/templates/header');
         echo view('user/pages/compositores', $data);
         echo view('user/templates/footer');
         echo view('user/templates/html-footer');
 
+    }
+
+    public function delete($id = false){
+
+        $compositores_model = new CompositoresModel();
+
+        if($id){
+            $compositores_model->delete($id);
+        }
+
+        return redirect()->to(base_url('composers'));
     }
 }

@@ -19,7 +19,9 @@ class GenerosMusicaisModel extends Model{
 
     public function getGenerosMusicais($id = false){
         if(!$id){
-            return $this->findAll();
+            return $this->orderBy('id','asc')
+                ->findAll();
+                
         } else {
             return $this->asArray()
                 ->where(['id' => $id])
