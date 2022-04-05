@@ -106,7 +106,7 @@
                                                 <button href="javascript:void(0)" class="btn btn-icon btn-round btn-google">
                                                     <i class="tim-icons icon-pencil"></i>
                                                 </button>
-                                                <a onclick="javascript:confirm('Deseja realmente excluir este compositor?')" href='/composers/delete/<?=$compositores_item['id']?>' class="btn btn-icon btn-round btn-google">
+                                                <a href='/compositores/delete/<?=$compositores_item['id']?>' onclick="return confirm('Deseja realmente excluir este compositor?')" class="btn btn-icon btn-round btn-google">
                                                     <i class="tim-icons icon-simple-remove"></i>
                                                 </a>
                                             </td>
